@@ -1,0 +1,349 @@
+/*
+Theme Name: EVDLV.pe
+Theme URI: www.latina.pe
+Author: Carlos Soto - Juan Carlos Ramos
+Author URI: https://wordpress.org/
+Description: 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: twentyfourteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+@charset "utf-8";
+/* CSS Document */
+/*********************************************************************
+**** RESET CSS *******************************************************
+*********************************************************************/
+@import url("reset.css");
+/*********************************************************************
+**** FONT-FACE *******************************************************
+*********************************************************************/
+@font-face{
+font-family: 'LubalinGraphStdDemi';
+src: url('fonts/lubalin_graph_std_demi.eot');
+src: url('fonts/lubalin_graph_std_demi.eot?#iefix') format('embedded-opentype'),
+url('fonts/lubalin_graph_std_demi.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face{
+font-family: 'LubalinGraphStdBook';
+src: url('fonts/lubalin_graph_std_book.eot');
+src: url('fonts/lubalin_graph_std_book.eot?#iefix') format('embedded-opentype'),
+url('fonts/lubalin_graph_std_book.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face{
+font-family: 'TrebuchetRegular';
+src: url('fonts/trebuchet_regular.eot');
+src: url('fonts/trebuchet_regular.eot?#iefix') format('embedded-opentype'),
+url('fonts/trebuchet_regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'futuraL';
+src: url('fonts/FuturaLT-Bold.eot');
+src: url('fonts/FuturaLT-Bold.eot?#iefix') format('embedded-opentype'),
+url('fonts/FuturaLT-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+/*********************************************************************
+*** CSS STYLES: FRECUENCIA LATINA 2014 *******************************
+*********************************************************************/
+body{
+
+    /*cursor: url(images/calabaza.png), auto;*/
+}
+.container{
+margin: 0 auto;
+padding: 0;
+max-width: 970px;
+}
+/*********************************************************************
+*** FOOTER ***********************************************************
+*********************************************************************/
+footer{
+position: relative;
+width: 970px;
+margin: 0 auto;
+font-family: "TrebuchetRegular";
+color: #FFF;
+display: table;
+padding: 15px 5px 6px 5px;
+}
+footer > div,
+footer .info-contacto div,
+footer .footer-content ul li{
+float: left;
+}
+footer .info-contacto{
+/*    border-right: 1px solid #c200ff;*/
+width: 33%;
+}
+footer .info{
+padding-top: 8px;
+}
+footer .info p{
+font-size: 11px;
+line-height: 15px;
+}
+footer .info a{
+color: #fff;
+text-decoration: underline;
+}
+.footer-content{
+width: 67%;
+float: right;
+}
+.footer-content > div{
+display: inline-block;
+width: 100%;
+}
+.footer-content > div > ul{
+/* float: right;
+display: table;*/
+}
+.footer-menu a{
+padding: 0 9px;
+font-size: 12px;
+line-height: 25px;
+font-family: "LubalinGraphStdDemi";
+}
+.footer-menu a:hover{
+color: #FFF;
+text-decoration: none;
+}
+.footer-links,
+.footer-links a{
+color: #FFF;
+font-size: 11px;
+line-height: 25px;
+}
+.footer-links a{
+padding: 0 9px;
+}
+.footer-social{
+margin-top: 10px;
+}
+.footer-social a{
+padding: 7px;
+}
+.footer-logos{
+background: #fff;
+height: 60px;
+font-size: 10px;
+font-weight: 700;
+text-align: center;
+color: #9a999e;
+float: none;
+width: 100%;
+margin: 0 auto;
+padding: 5px 0;
+}
+.footer-logos-content{
+width: 700px;
+margin: 0 auto;
+
+}
+.footer-logos-content{
+font-family: Arial;
+color: #666664;
+font-size: .9em;
+}
+.footer-logos-content > div{
+float: left;
+}
+#comscore{
+width: 200px;
+padding-top: 16px;
+}
+#comscore p {
+display: block;
+float: left;
+margin-top: 5px;
+}
+#comscore a {
+display: block;
+float: right;
+}
+#comscore a img {
+width: 100%;
+}
+#iabp{
+margin: 0px 68px;
+width: 160px;
+}
+#iabp p {
+display: block;
+float: left;
+margin-top: 15px;
+text-align: left;
+}
+#iabp a {
+display: block;
+float: right;
+}
+#iabp a img {
+width: 100%;
+}
+#codigo{
+width: 204px;
+padding-top: 10px;
+}
+#codigo p {
+display: block;
+float: left;
+margin-top: 11px;
+}
+#codigo a {
+display: block;
+float: right;
+}
+#codigo a img {
+width: 100%;
+}
+/* Menu Noticias */
+#menu-menunoticias {
+background: #6000FF none repeat scroll 0% 0%;
+color: #FFF;
+padding: 5px 0px;
+}
+ul#menu-menunoticias.nav-menu li {
+display: inline-block;
+padding: 20px 10px 10px 30px;
+}
+ul#menu-menunoticias.nav-menu li a {
+color: #00DDB5;
+}
+/* Menu Entretenimiento */
+#menu-menuyosoy,
+#menu-menuestelar,
+#menu-menuentretenimiento {
+background: #FF0091 none repeat scroll 0% 0%;
+color: #FF0;
+padding: 5px 0px;
+}
+ul#menu-menuyosoy.nav-menu li,
+ul#menu-menuestelar.nav-menu li,
+ul#menu-menuentretenimiento.nav-menu li {
+display: inline-block;
+padding: 3px 10px 6px 30px;
+}
+ul#menu-menuyosoy.nav-menu li a,
+ul#menu-menuestelar.nav-menu li a,
+ul#menu-menuentretenimiento.nav-menu li a {
+color: #FFF;
+}
+/* Menu Entretenimiento */
+#menu-menudeportes {
+background: #FF4900 none repeat scroll 0% 0%;
+color: #FF0;
+padding: 5px 0px;
+}
+ul#menu-menudeportes.nav-menu li {
+display: inline-block;
+padding: 20px 10px 10px 15px;
+}
+ul#menu-menudeportes.nav-menu li a {
+color: #FFF;
+}
+.barNot{
+background-color: rgba(0,0,0,0.59);
+}
+
+/* Menu Especial Inicio */
+
+#menu-menuespeciales {
+background: #7F0087 none repeat scroll 0% 0%;
+color: #00DDB5;
+padding: 5px 0px;
+}
+ul#menu-menuespeciales.nav-menu li {
+display: inline-block;
+padding: 20px 10px 10px 15px;
+}
+ul#menu-menuespeciales.nav-menu li a {
+color: #FFF;
+}
+.barNot{
+background-color: rgba(0,0,0,0.59);
+}
+
+
+
+
+/* Menu Especial Final */
+
+/** responsive **/
+.embed-container { 
+position: relative; 
+padding-bottom: 56.25%;
+overflow: hidden;
+max-width: 100%;
+height: auto;
+} 
+
+.embedImage,
+.embed-container iframe,
+.embed-container object,
+.embed-container embed { 
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.footer-links {
+text-align: right;
+padding-right: 10px;
+}
+ul.opciones-menu a:hover {
+color: #656565;
+}
+ul.opciones-menu a i{
+width: 20px;
+display: inline-block;
+text-align: center;
+}
+ul.opciones-menu a {
+color: #969696;
+font-size: 15px;
+}
+li.divider {
+display: inline-block;
+height: 13px;
+border-right: 1px solid #969696;
+margin: 0 5px;
+}
+footer .footer-content ul li.divider {
+border: 0;
+line-height: 21px;
+margin: 0;
+color: #00ddb5!important;
+}
+
+.video-container { position: relative; padding-top: 15px; /*padding-bottom: 56.25%; */ overflow: hidden; }
+.video-container iframe, .video-container object, .video-container embed, .video-container video { top: 0; left: 0; width: 100%; /* position: absolute; height: 100%; */ }
+
+.bannersheader {
+    width: 100%;
+}
+
+.banner {
+    display: block;
+}
+
+
